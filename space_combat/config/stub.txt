@@ -1,0 +1,6 @@
+gameloop
+read x:int
+read y:int
+read nbcross:int
+loop nbcross read xcross:int ycross:int valuecross:int
+write 200 1000 JUMP

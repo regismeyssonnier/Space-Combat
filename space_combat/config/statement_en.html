@@ -1,0 +1,63 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div id="statement_back" class="statement_back" style="display: none"></div>
+<div class="statement-body">
+  <!-- GOAL -->
+  <div class="statement-section statement-goal">
+    <h2>
+      <span class="icon icon-goal">&nbsp;</span> <span>The Goal</span>
+    </h2>
+    <div class="statement-goal-content">Get more cross than the BOSS.</div>
+  </div>
+
+  <!-- RULES -->
+  <div class="statement-section statement-rules">
+      <h1>
+          <span class="icon icon-rules">&nbsp;</span>
+          <span>Rules</span>
+      </h1>
+      <div class="statement-rules-content">
+          <p>The game is played on a map <const>1920</const> units wide and <const>1080</const> units high.</p>
+
+          <p>The spaceship have a radius of collision by <const>200</const> units.</p>
+
+          <p>The cross are <const>75</const> units wide and <const>75</const> units high.</p>
+
+      </div>
+  </div>
+
+  <!-- PROTOCOL -->
+  <div class="statement-section statement-protocol">
+    <h2>
+      <span class="icon icon-protocol">&nbsp;</span>
+      <span>Game Input</span>
+    </h2>
+    <!-- Protocol block -->
+    <div class="blk">
+      <div class="title">Input for one game turn</div>
+      <div class="text">
+          <span class="statement-lineno">Line 1:</span> 1 integer <var>x</var> for the current x position of your spaceship. <br>
+          <span class="statement-lineno">Line 2:</span> 1 integer <var>y</var> for the current y position of your spaceship.
+          <br>
+          <span class="statement-lineno">Line 3:</span> 1 integer <var>nb_cross</var> for the number of cross that you can catch.
+          <br>
+          <span class="statement-lineno">nb_cross Line :</span> 1 integer <var>crossX</var>, 1 integer <var>crossY</var> and 1 integer <var>valueCross</var> for the current coordinate (x, y) and value of the cross.
+          <br>
+          
+      </div>
+    </div>
+
+    <!-- Protocol block -->
+    <div class="blk">
+      <div class="title">Output for one game turn</div>
+      <div class="text"><span class="statement-lineno">Line 1:</span> 1 integer <var>x</var> , 1 integer <var>y</var> for the target coordinate of your spaceship and <var>JUMP</var> if you want to jump.</div>
+      <div class="text">For example: 10 10 JUMP for the new coordinate x=10 y=10 and a JUMP.<br /> (NOTE) The Y coordinate is not active for this league</div>
+    </div>
+
+    <!-- Protocol block -->
+    <div class="blk">
+      <div class="title">Constraints</div>
+      <div class="text">Response time for first turn ≤ 1000ms <br>
+        Response time for one turn ≤ 100ms</div>
+    </div>
+  </div>
+</div></body></html>
